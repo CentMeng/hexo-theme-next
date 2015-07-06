@@ -74,7 +74,7 @@
    <script type="text/javascript" src="{{ url_for(theme.js) }}/lazyload.js"></script>
    <script type="text/javascript">
     jQuery(function() {          
-        jQuery("img").lazyload({
+        jQuery("#posts img").lazyload({
           placeholder:"http://www.arao.me/loading.gif",
             effect:"fadeIn"
           });
