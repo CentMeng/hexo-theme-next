@@ -70,15 +70,17 @@
   {% include '_scripts/analytics/google-analytics.swig' %}
   
    <!-- lazyload图片延迟加载 -->
+   {% if config.lazyload %}
    <script type="text/javascript" src="{{ url_for(theme.js) }}/lazyload.js"></script>
-    <script type="text/javascript">
-      jQuery(function() {          
-          jQuery("img").lazyload({
-            placeholder:"http://www.arao.me/loading.gif",
-              effect:"fadeIn"
-            });
+   <script type="text/javascript">
+    jQuery(function() {          
+        jQuery("img").lazyload({
+          placeholder:"http://www.arao.me/loading.gif",
+            effect:"fadeIn"
           });
-  </script>
-  
+        });
+    </script>
+    {% endif %}
+    
 </body>
 </html>
