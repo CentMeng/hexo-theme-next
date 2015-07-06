@@ -35,6 +35,8 @@ highlight_theme: normal
 # MathJax Support
 mathjax:
 
+#lazyload图片延迟加载，默认开启
+lazyload: true
 
 # Schemes
 #scheme: Mist
